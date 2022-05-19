@@ -1,3 +1,4 @@
+const total = 4;
 let corretas = 0;
 let erradas = 0;
 let q1 = 'none';
@@ -60,4 +61,36 @@ function question4 (value) {
         q4 = value;
         label.classList.add('correct');
     }
+}
+
+
+function correcao () {
+    if (q1 === "a") {
+        corretas++
+    } else {
+        erradas++
+    };
+
+    if (q2 === 'a') {
+        corretas++
+    } else {
+        erradas++
+    }
+
+    if (q3 === 'd') {
+        corretas++
+    } else {
+        erradas++
+    }
+
+    if (q4 === 'b') {
+        corretas++
+    } else {
+        erradas++
+    }
+
+
+
+    const media = corretas / total;
+    alert('média' + media * 100 + '%');
 }
