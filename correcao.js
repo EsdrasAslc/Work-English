@@ -1,36 +1,63 @@
-function correcao () {
+let corretas = 0;
+let erradas = 0;
+let q1 = 'none';
+let q2 = 'none';
+let q3 = 'none';
+let q4 = 'none';
 
-    let corretas = 0;
-    let erradas = 0;
 
-    const q2anwer = document.querySelector('#q2-a');
-    const q3anwer = document.querySelector('#q3-d');
-    const q4anwer = document.querySelector('#q4-b');
+function question1 (value) {
+    const label = document.querySelector('#l1-' + value);
+    if (q1 == 'none' ) {
+        q1 = value 
+        console.log(q1 = value);
 
-    if (q2anwer.checked) {
-        corretas++
+        label.classList.add('correct');
     } else {
-        erradas++
-    } 
+        document.querySelector('#l1-'+ q1).classList.remove('correct');
+        q1 = value;
+        label.classList.add('correct');
+    }
+}
 
-    if (q3anwer.checked) {
-        corretas++
+function question2 (value) {
+    const label = document.querySelector('#l2-' + value);
+    if (q2 == 'none' ) {
+        q2 = value 
+        console.log(q2 = value);
+
+        label.classList.add('correct');
     } else {
-        erradas++
-    } 
+        document.querySelector('#l2-'+ q2).classList.remove('correct');
+        q2 = value;
+        label.classList.add('correct');
+    }
+}
 
-    if (q4anwer.checked) {
-        corretas++
+function question3 (value) {
+    const label = document.querySelector('#l3-' + value);
+    if (q3 == 'none' ) {
+        q3 = value 
+        console.log(q3 = value);
+
+        label.classList.add('correct');
     } else {
-        erradas++
-    } 
+        document.querySelector('#l3-'+ q3).classList.remove('correct');
+        q3 = value;
+        label.classList.add('correct');
+    }
+}
 
-    // if (q5anwer.checked) {
-    //     corretas++
-    // } else {
-    //     erradas++
-    // } 
+function question4 (value) {
+    const label = document.querySelector('#l4-' + value);
+    if (q4 == 'none' ) {
+        q4 = value 
+        console.log(q4 = value);
 
-
-    
+        label.classList.add('correct');
+    } else {
+        document.querySelector('#l4-'+ q4).classList.remove('correct');
+        q4 = value;
+        label.classList.add('correct');
+    }
 }

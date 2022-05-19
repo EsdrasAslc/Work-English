@@ -19,12 +19,12 @@ main {
 	padding-bottom: 10px;
 	
 }
-
+/* 
 .marcar-q {
 	display: flex;
 	flex-direction: column;
 	justify-content: left;
-}
+} */
 
 .marcar-q div {
 	padding: 10px;
@@ -76,4 +76,10 @@ label {
 
 main, header {
 	max-width: 600px;
+}
+
+.correct {
+	background-color: greenyellow;
+	border: 1px solid black;
+	border-radius: 5%;
 }
