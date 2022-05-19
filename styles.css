@@ -32,15 +32,10 @@ main {
 	gap: 10px;
 }
 
-.marcar-q label, .marcar-q input {
-	min-width: 50px;
-	max-width: 300px;
+label {
+	font-size: 1.5rem;
 }
 
-input[type="radio" i] {
-	size: 100px;
-	background-color: rgb(6, 67, 199);
-}
 
 .youtube {
 	display: flex;
@@ -52,12 +47,13 @@ input[type="radio" i] {
 .alunos p {
     display: flex;
     flex-direction: row;
-	font-size: 1.5rem;
+	font-size: 1.75rem;
 }
 
 .alunos h1 {
 	padding-bottom: 10px;
 	padding-top: 10px;
+	font-size: 2.2rem;
 
 }
 
