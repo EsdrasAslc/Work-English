@@ -112,3 +112,15 @@ footer {
 	font-size: 50px;
 	border-radius: 5%;
 }
+
+#letra div {
+	padding-bottom: 50px;
+}
+
+.hide {
+	display: none;
+}
+
+#letra {
+	padding-bottom: 20px;
+}

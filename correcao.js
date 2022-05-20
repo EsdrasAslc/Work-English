@@ -121,3 +121,16 @@ function correcao() {
     const parcial = media * 100
     alert('média ' + parcial.toFixed(0) + '%' + " | " + 'Certas: ' + corretas + ' | ' + 'Erradas: ' + erradas );
 }
+
+function changeLetra() {
+    const letra = document.querySelector('#letraSection');
+    const h2 = document.querySelector('#h2letra');
+    
+    if (letra.classList.contains('hide')) {
+        letra.classList.remove('hide');
+        h2.innerHTML = 'Letra da Música ( Clique para ocultar )';
+    } else {
+        letra.classList.add('hide');
+        h2.innerHTML = 'Letra da Música ( Clique para abrir )';
+    }
+}
